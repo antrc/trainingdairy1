@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff34363e"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <FrameLayout
+        android:id="@+id/mainlistview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:layout_margin="10dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:background="#ff25252d">
+        </ListView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mainadd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#ff34363e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+ Создать новую тренировку"
+            android:textSize="20sp"
+            android:textColor="#fffffff7"/>
+    </FrameLayout>
+</LinearLayout>
